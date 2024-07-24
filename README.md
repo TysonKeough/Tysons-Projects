@@ -1,2 +1,5 @@
-Link to TinkerCad To Try the game
-https://www.tinkercad.com/things/3hPMpQyzelw-final-copy-of-tys-bombshop-final-project-defuse-the-bomb-?sharecode=3WCobEB3giNGvAigUowZE7jQvVGiBrAwys1uZ_k7cyU
+Tinkercad Arduino Bomb Defusal Game (C++) <br />
+I made this project because I thought making a game would be the most interesting choice while using the arduino. When I first started to plan out what I was going to do, I decided that using 2 arduinos would give me the result I was looking for. Some challenges I had were to get information sending between the two seperate arduinos but once that was working the game started to come together. If I was to recreate this game I would like to fully implement a hard mode that includes 2 more buttons with 2 more lights to add an extra level of difficulty with the timer remaining the same as the medium difficulty. I would also like to come back to this project at some point and fix some of the code because now when looking back the way I did it does not make much sense and I should be able to improve upon the game. <br />
+Link to TinkerCad To Try the game: https://www.tinkercad.com/things/3hPMpQyzelw-final-copy-of-tys-bombshop-final-project-defuse-the-bomb-?sharecode=3WCobEB3giNGvAigUowZE7jQvVGiBrAwys1uZ_k7cyU <br /> <br />
+
+
