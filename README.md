@@ -3,3 +3,14 @@ I made this project because I thought making a game would be the most interestin
 Link to TinkerCad To Try the game: https://www.tinkercad.com/things/3hPMpQyzelw-final-copy-of-tys-bombshop-final-project-defuse-the-bomb-?sharecode=3WCobEB3giNGvAigUowZE7jQvVGiBrAwys1uZ_k7cyU <br /> <br />
 
 
+Style Stage CSS Final Project <br /><br />
+
+I made this project for my final in advanced CSS. Our teacher wanted us to make our own variation of the stylestage.dev webpage. I decided that I wanted to go with something easy to read with full size scaling for different devices.
+<br /><br />
+
+
+Python Final Excel Sheet Searcher <br /><br />
+
+I made this Python project for my old job, it was made to speed up the process of searching through an excel sheet that stores names of people who have or have not read the policies and procedures for Pinecrest Nursing Home. It simply asks for at least 1 name and then it checks the sheet to see if there is a match if there is it grabs all of the information for that chosen person. Then it checks to see if the person has or has not read the policies and procedures if the have it will not create a word document but if they have not read any of them it will create a word document directed to the person which lets them know that they have 1 week from when the document was made to read and sign the policies and procedures. <br /><br />
+
+
