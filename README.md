@@ -15,6 +15,6 @@ I made this Python project for my old job, it was made to speed up the process o
 
 I made this project with a few people in my first semester class of HTML/CSS. It is a basic webpage designed to show of Motorola DynaTAC 8000x. It could have been better but I think for a first project in HTML/CSS it has a solid base to work off. <br /><br />
 
-**Rock Paper Scissors C#**
+**Rock Paper Scissors C#**<br /><br />
 This was my final project for Programming fundamentals in C#. This was a cool project which allowed me to work with C# to create a classic game that everyone knows. There are a few issues with the code itself. One of these issues would be that the input handing could only catch 1 missinput before it will crash the application. With what I know now I will be redoing this project and correcting some of the errors that I had with it.<br /><br />
 
