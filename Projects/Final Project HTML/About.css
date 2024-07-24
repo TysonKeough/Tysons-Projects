@@ -1,0 +1,57 @@
+/* About us - styles.css */
+
+
+.textpara{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+}   
+/* Added text shadow and background color, aligned text to the left as well as spacing/format
+this will affect all text that is a "p" element */
+.MissionTxt p, .HistoryTxt p
+{
+    text-shadow: 1px 1px;
+    background-color: #dedcdc;
+    text-indent: 30px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    text-align: left;
+}
+
+.OurMission{
+    display: flex; /*flexbox style*/
+    flex-direction: row; /*flexbox layout*/
+    justify-content: space-evenly; /*even space in the container*/
+    border: 1px solid black;
+}
+
+.MissionTxt{
+   
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+body {
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+ }
+
+.OurHistory{
+    display: flex; /*flexbox style*/
+    flex-direction: row; /*flexbox layout*/
+    justify-content: space-evenly; /*boxes inside have even space*/
+    border: 1px solid black;
+ }
+
+.HistoryTxt{
+    
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}

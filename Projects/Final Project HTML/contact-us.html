@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <link rel="icon" href="images/motor-icon2.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--  style sheets   -->
+    <link href="style.css" rel="stylesheet" type="text/css" >
+    <link href="style2.css" rel="stylesheet" type="text/css" >
+    <link href="styleForm.css" rel="stylesheet" type="text/css">
+        <!--  script link   -->
+    <script src="Head-foot.js" defer></script>
+
+</head>
+
+<body>
+<main>
+    <header id="main-header"></header><!-- header    -->
+
+    <div class="containerForm"><!--  container for content   -->
+        <br><br><br><br><br><br><br><!--  breaks  -->
+        <div><h1 id="header1Form">Contact Us</h1></div><!-- first header    -->
+        <div><p id="headerForm">Send Us an Email</p></div><!-- second header/ text    -->
+
+        <form class="forms" action="thankyou.html" method="get"><!-- form    -->
+            
+            <input type="text" class="inputfields" id="name" placeholder="Full Name" required><!-- full name input    -->
+            <input type="email" class="inputfields" id="email" name="email" placeholder="Enter Your Email..." required><!--  email input   -->
+            <textarea id="areatext" name="areatext" rows="4" cols="50" placeholder="Enter Message Here..." required></textarea><!-- textarea input    -->
+            
+            <input type="submit" class="inputfields" id="buttonpress" value="Send"><!-- submit button for form    -->
+        </form>
+
+        
+        <p id="numberForm"> Need help now? Call us at 1-800-555-5555</p><!-- contact text    -->
+
+    </div>
+        <!-- footer    -->
+    <footer id="footer-section"></footer>
+</main>
+</body>
+</html>

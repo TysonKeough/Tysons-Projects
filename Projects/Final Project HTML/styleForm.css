@@ -1,0 +1,106 @@
+
+/*  Styles for Contact page   */
+
+/*  Whole page style. full page..  */
+*{
+    /*box-sizing: border-box;
+    margin: 0;*/
+}
+
+/* Whole container with form + text. Display as column.   */
+.containerForm{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+    
+}
+
+/*  First header styling  */
+#headerForm{
+    margin-top:1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: normal;
+    
+}
+
+/* Second header styling   */
+#header1Form{
+    font-family: 'Times New Roman', Times, serif;
+    
+    padding: 45px 0 10px 0;
+    
+    font-size: 45px;
+}
+
+/* Styling forms. Display in column, add vague background color, spacing.   */
+.forms{
+    
+    background-color: rgb(253, 253, 253);
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 10rem;
+    
+}
+/* padding space */
+.label{
+
+    padding: 25px;
+}
+
+/* Make text area, non resizeable + shape it.   */
+textarea{
+    padding: 12px 5px;
+    margin: 15px;
+    
+    resize: none;
+    border-radius: 8px;
+}
+/*  Style input fields email + full name...  */
+.inputfields{
+    padding: 12px 5px;
+    margin: 15px;
+    
+    border: 1px solid gray;
+    border-radius: 8px;
+    
+}
+
+/* match width for name input with textarea*/
+#name{
+    width: 93%;
+}
+/* match width for email with text area   */
+#email{
+    width: 93%;
+}   
+/*  style submit button  */
+#buttonpress{
+
+    width: 25%;
+    border: none;
+    cursor: pointer;
+    
+}
+/*  add hover color for button  */
+#buttonpress:hover{
+
+    background-color: rgb(187, 187, 187);
+}
+/* Create space around helpline number   */
+#numberForm{
+
+    margin: 50px 0 100px 0; 
+}
+
+
+    
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Buy Now!</title>
+    <link rel="icon" href="images/motor-icon2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="style.css" rel="stylesheet" type="text/css"><!--Links Style Sheet for the Header-->
+    <link href="style2.css" rel="stylesheet" type="text/css"><!--Links Style Sheet for the Footer-->
+    <script src="Head-foot.js" defer> </script><!--Links the JavaScript for the Header and Footer-->
+    <link href="style3.css" rel="stylesheet" type="text/css"><!--Links the Style Sheet for the Product Page-->
+    
+    
+</head>
+<body>
+    <header id="main-header"></header><!--Product Pages Main Header--> 
+    <br><br><br><br>
+
+    <form name="Phone Order"  class="MyForm" action="orderplaced.html" method="get">  <!--This starts the form-->  
+    <h2>Order Details:</h2>
+    <br>
+<p>Name: <input type="text" id="name" required placeholder="Bob Alice"> </p> <!--This is a box to enter your name-->
+<br>
+<p>E-Mail: <input type="text" id="email" required placeholder="Blank@gmail.com"> </p> <!--This is a box to enter your email-->
+<br>
+<p>Phone: <input type="text" id="phone" required placeholder="123-456-7890"> </p> <!--This is a box to enter your phone number-->
+<br>
+<p>Credit Card: <input type="text" id="Cardinfo" required placeholder="1234-5678-9012"> </p> <!--This is a box to enter your card info-->
+<br>
+<p>CVV: <input type="text" id="CVV" required placeholder="123"> </p> <!--This is a box to enter your card info-->
+<br>
+<p>Date of Expiry : <input type="text" id="ExpiryDate" required placeholder="10/20"> </p> <!--This is a box to enter your card info-->
+<br>
+<p>Address: <input type="text" id="address" required placeholder="123 street"> </p> <!--If they need it delivered this is a box to put in your address-->
+
+<br>
+
+<input type="submit" class="OrderButton" name="placeorder" value="Place Order!"> <!--This is a button to submit your Order and take you to orderplaced.html -->    
+</form> 
+
+<footer id="footer-section"></footer><!--Footer Section-->
+
+</body>
+</html>

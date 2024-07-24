@@ -1,0 +1,125 @@
+body {
+    justify-content: center;/*Makes them centered*/
+    align-items: center;/*Centers Everything*/
+    height: 100vh;/*This is the height of the page*/
+    margin: 0;/*This changes the margin*/
+  }
+  
+h2 { /*Main Header*/
+font-size: 40px; /*This Changes the size of my font*/
+font-family: 'Times New Roman', Times, serif/*This changes the style of the font*/
+}
+
+  .product-image {/*For the images of the phone*/
+    max-width: 100%;/*This is the max width of the images*/
+    height: 100%;/*This is the max height of the images*/
+  }
+  .product-image2 {/*This is for the icon of the phone*/
+    max-width: 50%;/*This is the max width of the icon*/
+    height: 50%;/*This is the max height of the icon*/
+  }
+.first {/*First section of the page*/
+  flex: auto;/*Chooses how it flexes*/
+  margin-top: 20px;/*Adds space from the top */
+  margin: auto;/*adds margins*/
+  text-align: center;/*Centers text*/
+  font-size: x-large;/*Makes the font extra large*/
+  font-family: 'Roboto', sans-serif;/*Changes the font family*/
+  margin-bottom: 20px;/*Bottom margin*/
+background-color: white;/*Changes the background color*/
+}
+
+  .second {/*Second section of the page */
+    background-color: rgb(0, 0, 0);/*Changes background color*/
+    flex: auto;/*Flex type*/
+    margin-top: 20px;/*Adds space from the top */
+    margin: auto;/*Auto margins*/
+    text-align: center;/*Centers the text*/
+    font-size: x-large;/*Changes the font size*/
+    font-family: 'Roboto', sans-serif;/*Changes the font family */
+    color: white;  /*Changes the color of the text*/
+  margin-bottom: 20px;/*bottom margin*/
+
+  }
+.Text2{/*changes the second text*/
+width: auto;/*autos the width*/
+margin-left: 200px;/*adds a margin on the left*/
+margin-right: 200px;/*adds a margin on the right*/
+}
+
+.third{/*changes the third section of the page*/
+  display: flex;/*makes it a flex*/
+    align-items: center;/*centers*/
+    justify-content: center;/*centers*/
+    height: 30vh;/*changes the height of the section*/
+ flex: auto;/*autos the flexbox*/
+    margin-top: 20px;/*Adds space from the top */
+    margin: auto;/*makes the margins auto*/
+    text-align: center;/*centers the text*/
+    font-size: x-large;/*makes the font extra large*/
+    font-family: 'Roboto', sans-serif;/*changes the font family */
+    margin-bottom: 20px;/*adds a margin on the bottom*/
+}
+
+  #buy-now-button {/*changes the button on product page*/
+    margin-top: 20px;/*Adds space from the top */
+    padding: 50px 60px;/*adds padding for the button*/
+    font-size: 45px;/*changes the font size*/
+    font-weight: bold;/*makes the font bold*/
+  flex-direction: column;/*changes how it flexes*/
+  display: flex;/*makes it a flex object*/
+  align-items: center;/*makes items center*/
+  justify-content: center;/*makes items center*/
+
+  }
+
+  .MyForm{/*changes the form used to confirm your order*/
+    justify-content: center;/*Make sure its centered */
+    align-items: center;/*aligns text to the center*/
+    height: 55vh;/*page Height*/
+    margin: 0;/*Margins*/
+    flex: auto;/*auto flex*/
+    margin-top: 20px;/*Adds space from the top */
+    margin: auto;/*Autos the margins*/
+    text-align: center;/*Aligns Text*/
+    font-size: large;/*Changes the font size*/
+    font-family: 'Roboto', sans-serif;/*Changes the font family*/
+    margin-bottom: 20px;/*Bottom margin*/
+  }
+
+  .line {/*changes the line in the third section of the product page*/
+    border-left: 2px solid #000;/*Color of the line*/
+    height: 30%;/*Height of the line*/
+    margin: 0 20px;/*Adds space from the top */
+}
+
+ul{/*changes the list on the third section of the page*/
+list-style-type: none;/*No style type on the list*/
+}
+
+.Text3{/*changes the list on the third section of the page*/
+text-align: left;/*aligns text to the left*/
+}
+
+.Ordered{/*changes the font on the thank you for ordering page*/
+font-size: 30px; /*This Changes the size of my font*/
+font-family: 'Times New Roman', Times, serif;/*Changes the font family*/
+text-align: center;/*Centers the text*/
+}
+
+.OrderButton{/*changes the button for the confirm order page */
+background-color: white;/*Changes the background-color*/
+border-width: 1.5px;/*Width of the border*/
+width: 105px;/*Width of the button*/
+height: 35px;/*Height of the button*/
+text-align: center;/*Aligns the text to the center*/
+font-size: medium;/*Changes the font size*/
+font-family: 'Roboto', sans-serif;/*Changes the font type*/
+}
+
+.Height{/*Height of thank you for ordering page*/
+  justify-content: center;/*Centers content*/
+  align-items: center;/*Centers content*/
+  height: 70vh;/*Changes height of the page*/
+  margin: 0;/*Margin on page*/
+}

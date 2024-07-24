@@ -1,0 +1,263 @@
+
+  /* whole page styling. Make page fit full.   */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the body */
+  body {
+    
+    margin: 0;
+  }
+  
+  
+  
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  /* Navbar styling. Flex items, and align properly. */
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(230, 230, 230, 0.5); /* #483C34 - #A6885A - #333;  */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    text-align: center;
+    height: 3rem;
+    
+  }
+
+  
+  /* Style nav bar anchors*/
+  .navbar a {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(109, 109, 109);
+    font-size: 14px;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  
+  
+  /* Change background color on hover, for only select elements */
+  .navbar a.noHover:hover {
+    background-color: #dedcdc; /* #ddd - #A38657 */
+    /* color: black; */
+  }
+  
+
+  /* Adjust Motorola icon size */
+  .navbar img {
+    height: 17px;
+    width: 20px;
+    
+    
+  }
+  /* Dropdown div container. Basically the icon.    */
+  .dropdown{
+
+    padding: 12px;
+    margin-top: 2px;
+
+  }
+
+  /* Content within dropdown div.     */
+  .dropdown-content{
+    display: none;
+    float: right;
+    padding-left: 15px;
+  }
+
+  /* Text search bar... styling to look beautiful.*/
+  #searchtext{
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  .show{display: block;}
+
+  
+  
+  /* Main DIV for main. Flex three containers, into a column at max width. */
+  .row {  
+    /*display: -ms-flexbox; *//* IE10 */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*-ms-flex-wrap: wrap; *//* IE10 */
+    
+    
+  }
+  
+  
+  /* first section of home page. Flex items within*/
+  .side {
+    
+    
+    background-color: #ffffff;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+
+    text-align: center;
+    height: 750px;
+    height: 47rem;
+  }
+
+  /* Two main images styling. Adjust space. */
+  .mainimages {
+    margin-top: 25px;
+  }
+
+  #imagetester{
+    width: 100%;
+
+  }
+  /*  Header text styling under image */
+  .imagehead{
+
+    padding: 20px 0 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+  }
+  /*  More Header text styling under image, different size. */
+  .imagehead2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+
+  }
+
+  .info-text{
+
+    font-size: 15px;
+    padding: 15px;
+  
+  }
+  /* style the anchor for 'shop' in first section    */
+  .styleanchor{
+    text-decoration: none;
+    padding: 20px 0 50px 0;
+    font-size: 20px;
+    color: rgb(68, 68, 203);
+
+  }
+  /* Hover attributes for anchor / span.    */
+  span:hover{
+    text-decoration: underline;
+    color: rgb(85, 85, 204);
+  }
+
+  
+  /* Second section. Flex items within, and change color.*/
+  .main {   
+    /*-ms-flex: 70%; *//* IE10 */
+    /*flex: 70%;*/
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    text-align: center;
+
+    color: white;
+    height: 47rem;
+
+   
+  }
+  /* third section container, bacgr  */
+  .thirdsection{
+
+    /*display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    
+    text-align: center;*/
+    background-color: bisque;
+    width: 75%;
+    margin: auto;
+
+    height: 25rem;
+
+  }
+  /*  content container for third section, flex items / order them   */
+  .contentContainer{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+    height: 25rem;
+    
+
+  }
+  /*  Style and control area of vertical line */
+  .vl{
+    border-left: 2px solid rgb(1, 1, 1);
+    height: 100px;
+    padding: 25px 5px 25px 1px;
+    
+  }
+  /* add spacing to list content in third section  */
+  .listContent{
+
+    padding: 25px;
+    margin-left: 50px;
+  }
+
+  /*styling for third image on home page*/
+  #thirdpicture{
+
+    padding: 50px;
+    float: left;
+  }
+
+.textthank{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  margin-top: 10rem;
+  
+  height:30rem;
+
+}
+  
+  
+
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width:750px){
+    .shrinkimage {
+      width: 100%;
+    }
+  }

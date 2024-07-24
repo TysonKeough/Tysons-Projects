@@ -1,0 +1,548 @@
+/*
+Tyson Keough
+200578592
+CSS Final Project
+*/
+
+
+
+/*Set the character set*/
+@charset "UTF-8";
+  
+/*Define font face for Indie Flower */
+@font-face {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.gstatic.com/s/indieflower/v14/m8JVjfNVeKWVnh3QMuKkFcZVaUuH.woff2') format('woff2');
+  }
+
+/*This sets the main font and backup font background color and text color*/
+body{
+    background-color: indianred;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Indie Flower",cursive;
+    color:white;
+}
+
+/*This styles the header element*/
+h1{
+    font-size: 6rem;
+    border: 15px solid;
+    border-style:double;
+    border-color: black;
+    background-color: white;
+    color:  #e10531;
+    padding: 1.5rem;
+}
+
+/*This adds a hover effect that inverts the colors that were previously set*/
+h1:hover{
+    border-color: white;
+    background-color: black;
+}
+
+/*This changes the first letters size*/
+h1::first-letter{
+    font-size: 6rem;
+}
+
+/*This sets all h2 to a 2rem font size*/
+h2{
+    font-size: 2rem;
+}
+
+/*This does the paragraph element that follows a h1 and h2*/
+h1+h2+p{
+    font-size: 1.5rem;
+}
+
+/*this changes the size of the star and the color*/
+a span svg{
+    width: 1rem;
+    height: 3rem;
+    fill: white;
+}
+
+/*this adds a hover effect to the star*/
+a span svg:hover{
+    fill: gainsboro;
+}
+
+/*This styles the top left section */
+div p+a.link-github{
+    border: 2px solid maroon;
+    background-color: #e10531;
+    width: 5em;
+    text-decoration:none;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: none;
+    padding: none;
+}
+
+/*This centers all the text within the header*/
+header{
+    text-align: center; 
+}
+
+/*This aligns text makes the direction a row and centers content*/
+header,a span svg,div p+a.link-github,nav ul li, nav ul,.container #about .container h2, .container #about .container p,.container #about .container ul,#contribute .container h2,#contribute .container p,#contribute .container+.container,#guidelines .container h2,#guidelines .container p,#guidelines .container a,section+#files .container,.profile .container,.page-footer ul{
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+/*This makes each element a flex element*/
+header,a span svg,div p+a.link-github,nav ul li, nav ul,.container #about .container h2, .container #about .container p,.container #about .container ul,#contribute .container h2,#contribute .container p,#contribute .container+.container,#guidelines .container h2,#guidelines .container p,#guidelines .container a,section+#files .container,.profile .container,.page-footer ul,#guidelines .container h3,#styles .container ul,#styles .container li a,#styles .container li,.page-footer{
+    display: flex;
+}
+
+/*This is for the sticky navigation */
+nav{
+    border: 10px double black;
+    background-color: #e10531;
+    text-decoration: none;
+    top: 0;
+    position: sticky;
+    text-align: center;
+    padding: 0.5rem;
+    z-index: 1;
+}
+
+/*this removes the underline on the navigation sections*/
+nav ul li a{
+    text-decoration: none;
+}
+
+/*style the elements within the list within the nav bar*/
+nav ul li{  
+    list-style:none;
+    width:100%;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    height: auto;
+}
+
+/*add a hover effect to the nav bar elements*/
+nav ul li a:hover,div p+a.link-github:hover{
+    color: gainsboro;
+    text-decoration: underline;
+}
+
+/*move the link to skip to the top right of screen with some simple styling*/
+.skip-link{
+    float: right;
+    border: 2px solid maroon;
+    background-color: #e10531;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+/*add a hover effect to the skip element*/
+.skip-link:hover{
+    color: gainsboro;
+}
+
+/*add padding and a text color to all anchor elements*/
+a{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+}
+
+/*remove padding on the right of this element*/
+p strong+a+a{
+padding-right: 0rem;
+}
+
+/*add a hover to all anchor elements*/
+a:hover{
+    color: gainsboro; 
+}
+
+/*add padding on the left and right of these elements*/
+.container #about .container h2, .container #about .container p,.container #about .container ul,#contribute .container h2,#contribute .container p{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+/*add a font size line height and word spacing and a flex wrap to these elements*/
+.container #about .container h2, .container #about .container p,.container #about .container ul,#contribute .container h2,#contribute .container p,#contribute .container+.container{
+    flex-wrap: wrap;
+    font-size: 1.75rem;
+    line-height: 5rem;
+    word-spacing: 0.5rem;
+}
+
+/*add a margin to the div that follows a div within the contribute class*/
+#contribute .container+.container{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*add some padding to left and right for these elements*/
+#guidelines .container h2,#guidelines .container p,#contribute .container+.container{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/*change the line height, wrap it and add some word spacing to these elements*/
+#guidelines .container h2,#guidelines .container p,#guidelines .container a{
+    flex-wrap: wrap;
+    line-height: 2rem;
+    word-spacing: 0.5rem;
+}
+
+/*remove padding from the anchor elements within the guidelines id*/
+#guidelines .container a{
+    padding: none;
+}
+
+/*add some padding to the header within the guidelines id*/
+#guidelines .container h3{
+    padding-left: 2rem;
+}
+
+/*do some simple styling */
+.container #about .container ul li{
+    list-style: none;
+    padding: 1rem;
+    margin: 1rem;
+    border: 3px solid black;
+    font-size: 2rem;
+}
+
+/*add some padding to the left and right of the container*/
+.container #about .container ul{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/*change the font size for these elements*/
+.container #about .container h2,.container #about .container strong,#contribute .container h2,#guidelines .container h2{
+    font-size: 2.5rem;
+}
+
+/*set the width to auto for these elements*/
+.container #about .container u,.container #about .container h2, .container #about .container p,.container #about .container ul,#contribute .container h2,#contribute .container p,#contribute .container+.container,#guidelines .container h2,#guidelines .container p,#guidelines .container a,section+#files .container, section+#files .container a,.profile .container,#styles .container,.page-footer,.page-footer ul li{
+    width: auto;
+}
+
+/*rotate the tldr title on an angle*/
+#guidelines .container h3{
+    transform: rotate(354deg);
+    margin-left: 3%;
+    margin-right: 35%;
+}
+
+/*add a background and add some margins and a border to this container=*/
+#guidelines .container {
+    background-color: #e10531;
+    width:fit-content;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 15px double black;
+}
+
+/*add a hover effect that inverts the color of the background*/
+#guidelines .container:hover{
+    background-color: black;
+    border: 15px double white;
+}
+
+/*add a border, background color and some margins to the container holding the download files*/
+section+#files .container{
+    flex-direction: column;
+    margin-left: 35%;
+    margin-right: 35%;
+    border: 14px double black;
+    background-color: #e10531;
+}
+
+/*align all these sections text to center*/
+section+#files .container a, section+#files .container h3,.profile .container,.profile .container h2{
+    text-align: center;
+}
+
+/*add a small border around each download file*/
+section+#files .container a{
+    border: 4px solid black;
+    padding: 10px;
+    margin: 2% 30%;
+    font-size: 1.2rem;
+}
+
+/*make a simple container with a border and some margins to make the similar style to the other container*/
+.profile .container{
+    flex-direction: column;
+    border: 15px double black;
+    margin-top: 2rem;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 1.5rem;
+    background-color: #e10531;
+}
+
+/*make a 3rd simlar container that holds the three different styles*/
+#styles .container {
+    border: 15px double black;
+    margin-top: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.5rem;
+    background-color: #e10531;
+    margin-bottom: 5%;
+    text-align: center;
+    width: auto;
+}
+
+/*make sure there are no list styles, no wrap, and the content goes in a row */
+#styles .container .features{
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+}
+
+/*style the anchors within the styles id*/
+#styles .container li a{
+    text-decoration: none;
+    flex-direction: column;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/*change the font size to the elements within styles id*/
+#styles .container li span{
+    font-size: 1rem;
+}
+
+/*change each one of the different styles to have a darker background and style them*/
+#styles .container li {
+    border: 4px solid black;
+    margin: 3%;
+    margin-right:9%;
+    margin-left:5%;
+    padding: 2% 3%;
+    background-color: #880808;
+    width: 9rem;
+    flex-wrap: nowrap;
+}
+
+/*add a small margin on the left and right align the text to the left and change the font size*/
+.profile .container li{
+    text-align: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 1.3rem;
+}
+
+/*make the footer stay at the very bottom of the page and do some simple styling */
+.page-footer{
+    position: absolute;
+    bottom: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #e10531;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+}
+
+/*add some padding to the font and change the font size within the footer */
+.page-footer p{
+    font-size: 1.2rem;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/*add a border to the list elements in the footer and change font size and add a margin*/
+.page-footer ul li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    border: 4px solid white;
+    margin: 1rem;
+}
+
+/*remove the underline on the anchor elements*/
+.page-footer ul li a{
+    text-decoration: none;
+}
+
+/*add a underline when hover the anchor so the user knows they are hovering it*/
+.page-footer ul li a:hover,#styles .container li a:hover{
+    text-decoration: underline;
+}
+
+/*change the background color when hovered*/
+.page-footer ul li:hover,.container #about .container ul li:hover{
+    background-color: #880808;
+}
+
+/*change the stars size and color in the footer*/
+footer li a svg{
+    fill: white;
+    width: 2.5rem;
+    height: 2rem;
+}
+
+/*if the max width of the screen is 850 pixels or less*/
+@media (max-width: 850px) {
+
+    /*remove the nav bar*/
+    nav{
+    display: none;
+    }  
+
+    /*change the footers box*/
+    .page-footer{
+        width:78%;
+        height: auto;
+    }
+
+    /*shrink the elements in the footer*/
+    .page-footer ul li{
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin: 0.25rem;
+    }
+
+    /*make the font smaller*/
+    .page-footer p{
+        font-size: 1rem;
+
+    }
+    /*change the width and height of the star in the footer*/
+    footer li a svg{
+        width: 1.5rem;
+        height: 1.2rem;
+    }
+
+    /*change the header*/
+    h1{
+        font-size: 4rem;
+        padding: 1.5rem;
+    }
+
+    /*add some padding and a margin and make the font size smaller*/
+    .container #about .container ul li{
+        padding: 0.25rem;
+        margin: 0.25rem;
+        font-size: 1rem;
+        }
+
+    /*make the padding smaller*/
+    .container #about .container h2, .container #about .container p,.container #about .container ul{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /*make the margins on the left and right smaller*/
+     #guidelines .container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /*make the margins smaller and make the content centered*/
+    #styles .container,.profile .container,section+#files .container{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: auto;
+    }
+
+    /*center content and remove all margin and set the width to auto*/
+    #styles .container ul{
+        justify-content: center;
+        margin: none;
+        width: auto;
+    }
+
+    /*change the margins to the new ones center the content make it flex and set the width and height of the elements*/
+    #styles .container li{
+        margin-left: 1%;
+        margin-right: 12%;
+        padding-bottom: 10%;
+        margin: none;
+        justify-content: center;
+        display: flex;
+        height: 3rem;
+        width: 5rem;
+    }
+
+    /*make font size smaller*/
+    #styles .container li a{
+        font-size: 0.9rem;
+    }
+
+    /*make font size smaller*/
+    #styles .container li span{
+        font-size: 0.6rem;
+    }
+
+    /*make the margins smaller*/
+    #contribute .container+.container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /*change the font size, line height, word spacing, and align the text to the left of the screen*/
+    article+#contribute .container h2 , article+#contribute .container p,#contribute .container+.container,.container #about .container h2, .container #about .container p,.container #about .container ul{
+        font-size: 1.5rem;
+        line-height: 5rem;
+        word-spacing: 0.5rem;
+        text-align: left;
+    }
+
+    /*remove the margin*/
+    article+#contribute .container h2 , article+#contribute .container p{
+        margin: none;
+    }
+}
+
+/*if the max width is 1000 pixels*/
+@media (max-width: 1000px){
+    /*change the nav contents to a smaller size*/
+    nav ul li{
+        height: 2.5rem;
+    }
+
+    /*change the margins on the containers near the bottom of the page*/
+    .profile .container,section+#files .container{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+}
+
+/*if the max width is 1400 pixels*/
+@media(max-width:1400px){
+    /*change the width and font-size of the nav elements*/
+    nav ul li{  
+        font-size: 1.3rem;
+        width: 20rem;
+    }
+
+    /*change the margins and the padding on the style sheet elements near the bottom of the page*/
+    #styles .container li{
+        margin-left: 2%;
+        margin-right: 8%;
+        padding-bottom: 10%;
+        margin: none;
+        justify-content: center;
+        display: flex;
+        height: 5rem;
+        width: 6rem;
+    }
+
+    /*shrink the margins on the files container and the profile container*/
+    .profile .container,section+#files .container{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+
+}
